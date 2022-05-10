@@ -1,0 +1,24 @@
+<h2>Movie's Details</h2>
+
+<div class="card">
+  <h5 class="card-header bg-secondary">{{detailsMovie.title}}</h5>
+  <div class="card-body bg-dark text-white">
+    <h5 class="card-title">Genre: {{detailsMovie.genre}}</h5>
+    <p class="card-text">Plot: {{detailsMovie.plot}}</p>
+    <p class="card-text">Casting:</p>
+    <ul>
+    {{#each detailsMovie.cast}}
+    <p class="card-text">{{this.name}}</p>
+    <p class="card-text">{{this.occupation}}</p>
+    <p class="card-text">{{this.catchPhrase}}</p>
+    {{/each}}
+    </ul>
+
+    {{!-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+  </div>
+</div>
+
+
+
+
+
