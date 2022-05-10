@@ -1,11 +1,16 @@
 <h3>List of celebrities</h3>
 
 <div class="celebrities">
-    {{#each celebrities}}
-        <div class="celebrity">
-            <h5>{{this.name}}</h5>
-            <p>Occupation: {{this.occupation}}</p>
-            <p>Catch phrase: {{this.catchPhrase}}</p>
-        </div>
-    {{/each}}
+  {{#each celebrities}}
+    <div class="card mb-5 text-white border-top border-bottom">
+      <h5 class="card-header bg-secondary  border-top">{{this.name}}</h5>
+      <div class="card-body bg-dark border-bottom">
+        <h5 class="card-title">Occupation: {{this.occupation}}</h5>
+        <p class="card-text">Catch phrase: {{this.catchPhrase}}</p>
+        {{!-- <a href="/movies/{{detailsMovie._id}}/edit" class="btn btn-outline-success">EDIT MOVIE</a>
+                <a href="/movies/{{detailsMovie._id}}/delete" class="btn btn-outline-danger ms-3">DELETE MOVIE</a> --}}
+        {{! <a href="#" class="btn btn-primary">Go somewhere</a> }}
+      </div>
+    </div>
+  {{/each}}
 </div>
